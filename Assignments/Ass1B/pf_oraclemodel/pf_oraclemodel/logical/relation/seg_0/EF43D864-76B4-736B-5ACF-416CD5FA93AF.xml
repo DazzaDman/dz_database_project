@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="traininginstructor_training" directorySegmentName="seg_0" id="EF43D864-76B4-736B-5ACF-416CD5FA93AF">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="trninstr_trn" directorySegmentName="seg_0" id="EF43D864-76B4-736B-5ACF-416CD5FA93AF">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:03:35 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>

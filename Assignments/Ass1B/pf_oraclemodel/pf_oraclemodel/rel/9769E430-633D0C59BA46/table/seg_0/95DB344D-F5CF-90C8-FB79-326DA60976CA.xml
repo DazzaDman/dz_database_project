@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95DB344D-F5CF-90C8-FB79-326DA60976CA" name="Vet">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>2A6FFC52-31C7-5F46-B390-CA58C4447FC1</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vet_id" id="C97CF11F-BBAE-860F-B3B5-DE9A6A0626BA">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>5E89B0BA-CF25-B043-5ED9-60B098F5F6BA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_given_name" id="9F46FCA1-5BD4-4950-E379-E657C18100A6">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet given name]]></commentInRDBMS>
+<generatorID>933D9C57-4B1B-A670-8DE0-305F3FD5B9DF</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_family_name" id="F927D608-1FB8-013B-DAFD-DDC19A3FF9BC">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet family name]]></commentInRDBMS>
+<generatorID>6B80BC6C-4EC4-E96F-350F-24CC0D43034D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_phone" id="0787973E-1D42-C981-7744-1B2F051B6410">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet_phone]]></commentInRDBMS>
+<generatorID>361D66D3-44AE-AF0C-3004-667D30EDD76E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_date_employed" id="5763C5B1-CB8F-C2BE-449F-256625771EAD">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet date of employment]]></commentInRDBMS>
+<generatorID>18B43F2F-E44C-B84A-77FC-6250BD76F4DA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_specialization" id="7460050D-3709-63AF-C658-D76A9B381AEF">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet specialisation]]></commentInRDBMS>
+<generatorID>547B89A3-1353-73AE-138E-BC3FD2835A83</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_id" id="4F2CB489-1306-4E2F-0D41-08BB0650D151">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>F463E3A7-5507-14B7-0F70-B7FAF618CFA5</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E6A6595-A53B-9D5A-B71D-3F58EFFCA919" referredColumn="B550818E-D4D9-1111-E5A4-B698F8EC3178"/>
+</associations>
+</Column>
+<Column name="vet_home_clinic_id" id="0ACFC8FB-1139-3513-26F4-6B4027C1A13C">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet home clinic id]]></commentInRDBMS>
+<generatorID>0432B181-8DDE-1007-77E9-4E3E103A2B2C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E563428A-1543-47D6-C149-CB0AFB13F7D0" name="Vet_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>754ED87A-1F0D-40D0-545E-07C617D73BB3</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C97CF11F-BBAE-860F-B3B5-DE9A6A0626BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF9AFBB9-9428-CB0A-0671-329CB7F05792" name="VET_CLINIC">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>8794866C-7597-3933-C464-D2D7DCF0890F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F2CB489-1306-4E2F-0D41-08BB0650D151"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

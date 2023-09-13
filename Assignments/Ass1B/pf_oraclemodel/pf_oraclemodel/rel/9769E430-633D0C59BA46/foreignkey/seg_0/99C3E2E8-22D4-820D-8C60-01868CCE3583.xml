@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="99C3E2E8-22D4-820D-8C60-01868CCE3583" containerWithKeyObject="2A0A8A9A-4DB2-9E29-8E77-431E664BF399" localFKIndex="6EDA51EB-5E61-CEEB-41D4-762AC2CF744C" name="visit_service">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>9D4EC25D-A0E3-47D2-D3D1-42ED8BC5608B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<referredTableLongName>Visit</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6FC07FF6-79BF-8B31-9B1B-4DBA44BEE307</referredTableID>
+<keyObject>D7E4639E-A542-E56E-3DA5-3FF4027BD9AB</keyObject>
+<referredKeyID>D7E4639E-A542-E56E-3DA5-3FF4027BD9AB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>pet_id,visit_dateandtime</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

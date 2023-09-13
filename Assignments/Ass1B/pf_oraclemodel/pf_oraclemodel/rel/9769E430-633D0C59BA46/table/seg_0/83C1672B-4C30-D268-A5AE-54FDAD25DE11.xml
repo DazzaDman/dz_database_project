@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83C1672B-4C30-D268-A5AE-54FDAD25DE11" name="trninstr_spec">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Trn_Instr_trninstr_id" id="E7A11DCB-E4EF-F275-2D82-F58A6FC8D7E8">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C2A3A5E-BAFE-1CEA-C108-2974FB3E52B8" referredColumn="6F655B5D-D7D8-49F4-D808-B1D51726404B"/>
+</associations>
+</Column>
+<Column name="Spec_vet_spec_id" id="679AF429-1E16-8A90-B8AA-9ED83DDFB4FF">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72434D44-CEB9-0223-0683-9DA674D6B778" referredColumn="1ECB2F00-69F6-EBDB-7D87-32218E1FD98A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D21D71E-0464-48EF-2E5C-F27EBA3EE75E" name="trninstr_spec_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7A11DCB-E4EF-F275-2D82-F58A6FC8D7E8"/>
+<colUsage columnID="679AF429-1E16-8A90-B8AA-9ED83DDFB4FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83705D88-375F-DCFE-AF7F-C03121AAD2E9" name="trninstr_spec_Trn_Instr_FK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>F27CB5B5-2846-51AA-DC5E-ECFA0CCD6B6C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7A11DCB-E4EF-F275-2D82-F58A6FC8D7E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="443F6702-5B05-A3DC-15BC-790029DB32B8" name="trninstr_spec_Spec_FK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>F27CB5B5-2846-51AA-DC5E-ECFA0CCD6B6C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="679AF429-1E16-8A90-B8AA-9ED83DDFB4FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

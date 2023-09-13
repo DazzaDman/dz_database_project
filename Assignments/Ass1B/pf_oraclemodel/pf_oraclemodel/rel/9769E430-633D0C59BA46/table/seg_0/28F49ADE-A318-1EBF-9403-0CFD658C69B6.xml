@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28F49ADE-A318-1EBF-9403-0CFD658C69B6" name="Trn_Instr">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>F729A65C-DD48-23FF-735D-D4A63EC989E8</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<abbreviation>Trn Instr</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vet_spec_id" id="4D1F6648-4600-3DE2-90C9-1B48911D6D67">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
+<generatorID>B5D7FF18-0E77-3315-397C-E33666F7C137</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trninstr_id" id="6F655B5D-D7D8-49F4-D808-B1D51726404B">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[training instructor id]]></commentInRDBMS>
+<generatorID>B195A227-1357-97B1-B253-919C8E2CBCD6</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trninstr_name" id="47FF5DC1-AF20-9E9F-F7E4-6AAD7AEF4F86">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[training instructor name]]></commentInRDBMS>
+<generatorID>89053447-EBC6-663E-469A-E0FA13E6E353</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C0729CB-5713-CE2E-9A5D-3488399D2AC4" name="Training_Instructor_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>49CADF0A-DB1C-C07B-7A72-816AB6C56F06</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F655B5D-D7D8-49F4-D808-B1D51726404B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

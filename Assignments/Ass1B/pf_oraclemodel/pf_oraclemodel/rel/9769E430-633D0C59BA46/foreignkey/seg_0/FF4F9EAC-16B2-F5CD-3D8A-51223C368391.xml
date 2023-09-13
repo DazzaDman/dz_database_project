@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FF4F9EAC-16B2-F5CD-3D8A-51223C368391" containerWithKeyObject="8D199B24-A23A-9BF8-A9BB-8B1FA8A095E1" localFKIndex="7743B802-7F19-F6DC-4F73-1FDBFB052279" name="PRSC_DRUG_Prescription_FK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>1EC44F62-8BB4-1EF5-B93D-15D56A2BAECB</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<referredTableLongName>Prescription</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>16BDBD0F-3B8D-56C0-7E37-A7221EC60418</referredTableID>
+<keyObject>85B549D5-BDF1-30A0-BD11-D3A5DE51E2A5</keyObject>
+<referredKeyID>85B549D5-BDF1-30A0-BD11-D3A5DE51E2A5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>pet_id,visit_dateandtime</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

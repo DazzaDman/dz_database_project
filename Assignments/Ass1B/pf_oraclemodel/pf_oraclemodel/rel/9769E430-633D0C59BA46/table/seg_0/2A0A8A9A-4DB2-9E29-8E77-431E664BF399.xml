@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A0A8A9A-4DB2-9E29-8E77-431E664BF399" name="Service">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>8158AE6D-8989-A7E3-149E-9108550F0F82</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_code" id="A73001BD-C359-AC03-5653-6CE54901D39C">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[service code]]></commentInRDBMS>
+<generatorID>77EBB888-6CEF-1E48-24AD-1B5DC3375F0E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_description" id="DB74FBC5-E691-78B9-31CC-0FEFB5668579">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[service description]]></commentInRDBMS>
+<generatorID>B4E8F580-5CCF-C6C0-B48A-8DB3AB0B4D07</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_linecost" id="8673F2F8-D68A-6DDF-3501-3C89D4F86711">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[service line cost]]></commentInRDBMS>
+<generatorID>8D21B761-C038-832A-DA26-6A974E5273D0</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>50</dataTypeScale>
+<ownDataTypeParameters>,,50</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_id" id="3E4387C6-D4D4-4021-35F8-8D393565C554">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>8C0EB8E9-47F1-B624-7EB0-8DA2382FC1B0</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99C3E2E8-22D4-820D-8C60-01868CCE3583" referredColumn="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7"/>
+</associations>
+</Column>
+<Column name="visit_dateandtime" id="A5FC8CB7-D8FE-35C4-17C8-A4068EDC2CFC">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
+<generatorID>E6A7E5CE-0AB2-CF8A-C1BF-48CFA86A7F46</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99C3E2E8-22D4-820D-8C60-01868CCE3583" referredColumn="C6A0843F-1408-4DDA-EEF9-BC091BEBEF75"/>
+</associations>
+</Column>
+<Column name="Invoice_Invoice_ID" id="83090F56-EF1C-DC00-5923-1CA076722F80">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44406BDE-EED8-6BD8-5CD9-9BFD21C3D2A9" referredColumn="56FB1CBE-41FC-9962-CBA2-72FFC2F0F98A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08A3C831-8FFB-D991-827B-BC04B99BD1DE" name="Service_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>9E7A07B9-A2FE-3A65-D320-369E573B57DE</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A73001BD-C359-AC03-5653-6CE54901D39C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25A87E67-76B5-85CC-5D41-E93CAA2D415A" name="invoice_service">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>123EDA4F-9682-42AD-99D1-4410AD267315</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83090F56-EF1C-DC00-5923-1CA076722F80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EDA51EB-5E61-CEEB-41D4-762AC2CF744C" name="visit_service">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>9D4EC25D-A0E3-47D2-D3D1-42ED8BC5608B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E4387C6-D4D4-4021-35F8-8D393565C554"/>
+<colUsage columnID="A5FC8CB7-D8FE-35C4-17C8-A4068EDC2CFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

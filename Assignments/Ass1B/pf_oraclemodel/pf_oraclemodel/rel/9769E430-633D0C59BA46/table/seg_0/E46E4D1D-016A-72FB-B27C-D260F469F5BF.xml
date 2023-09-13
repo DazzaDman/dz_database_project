@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E46E4D1D-016A-72FB-B27C-D260F469F5BF" name="Animal_type">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>B2B8BDDA-956D-0D3E-DE89-7D988336BB6C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="animal_typeid" id="EDC194A6-341A-C903-A317-D3D4FAA9C729">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[animal type id]]></commentInRDBMS>
+<generatorID>02038B2A-D852-790C-B696-06554E640323</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>100</dataTypeScale>
+<ownDataTypeParameters>,,100</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="animal_typename" id="4DB0E0CF-FBCB-E395-1E00-D1CE66767F52">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[animal type name]]></commentInRDBMS>
+<generatorID>8ABF64B8-C08C-6D24-A61C-BFDF534093DA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D9FF697-DB28-B13B-3633-44849164E084" name="Animal_type_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>9E3E8DDA-061D-81CE-6EAB-3CB876606EE4</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDC194A6-341A-C903-A317-D3D4FAA9C729"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26546576-333F-0E6A-0955-66B335B4302C" name="Animal_type_NK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>40E86EA4-D35B-B84B-7833-29B6EAA4C887</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDC194A6-341A-C903-A317-D3D4FAA9C729"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

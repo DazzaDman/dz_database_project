@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="training_id" id="383BB7C1-1CC1-234B-2886-63DB270A9EDB">
+<Attribute name="trn_id" id="383BB7C1-1CC1-234B-2886-63DB270A9EDB">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 07:15:23 UTC</createdTime>
 <commentInRDBMS><![CDATA[training ID (surrogate PK)]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="training_name" id="ED2F96C4-02A1-C005-D925-AD8013439F1B">
+<Attribute name="trn_name" id="ED2F96C4-02A1-C005-D925-AD8013439F1B">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 07:17:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[name of training]]></commentInRDBMS>
@@ -43,7 +43,7 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="training_duration" id="4A82682C-8B16-9F7B-B56E-54EA0A5662CB">
+<Attribute name="trn_duration" id="4A82682C-8B16-9F7B-B56E-54EA0A5662CB">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 07:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[duration of training]]></commentInRDBMS>
@@ -89,7 +89,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="training_start_date" id="73DB1BD8-9ABA-CEFA-6971-6BDE0E4204E6">
+<Attribute name="trn_start_date" id="73DB1BD8-9ABA-CEFA-6971-6BDE0E4204E6">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:01:53 UTC</createdTime>
 <commentInRDBMS><![CDATA[training starting date]]></commentInRDBMS>
@@ -102,7 +102,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="training_start_time" id="7DC95E3B-DE7A-E28D-5A7E-2B3C12812771">
+<Attribute name="trn_start_time" id="7DC95E3B-DE7A-E28D-5A7E-2B3C12812771">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:02:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[training starting time]]></commentInRDBMS>
@@ -117,7 +117,7 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="traininginstructor_id" id="201672A9-5A6F-482B-4CF0-8562C3134F3D">
+<Attribute name="trninstr_id" id="201672A9-5A6F-482B-4CF0-8562C3134F3D">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:17:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[training instructor id]]></commentInRDBMS>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16BDBD0F-3B8D-56C0-7E37-A7221EC60418" name="Prescription">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>EB8E6C66-C4E5-EAE0-42D4-D05DFFFAF87F</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prsc_dose" id="499877A2-2529-389A-3BAF-FEADE079C1AB">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[advice dose of drug]]></commentInRDBMS>
+<generatorID>24A36E2C-7B4D-B276-EB3C-5BEE7F8065E9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prsc_freq" id="0218479F-3E43-F8B4-F185-6A3E1398431B">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[advice frequency of drug]]></commentInRDBMS>
+<generatorID>1B044E93-6459-ED30-8B3C-858662E1E7B1</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_id" id="89DADC39-CACE-EE88-8B0A-DFB30922AF76">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>32BBE25E-5318-FA49-5D30-FA94F8CE8BAE</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36A7F9F6-D8C9-0A83-694F-D961735EA488" referredColumn="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7"/>
+</associations>
+</Column>
+<Column name="visit_dateandtime" id="4247D74A-C973-7865-B648-69A06B4CCD4A">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
+<generatorID>5F69B05F-D2F5-8D43-B876-D3D0A64F42CA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36A7F9F6-D8C9-0A83-694F-D961735EA488" referredColumn="C6A0843F-1408-4DDA-EEF9-BC091BEBEF75"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85B549D5-BDF1-30A0-BD11-D3A5DE51E2A5" name="Prescription_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>960998E3-93F4-A074-972A-A5EC84365D5C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89DADC39-CACE-EE88-8B0A-DFB30922AF76"/>
+<colUsage columnID="4247D74A-C973-7865-B648-69A06B4CCD4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="335C3B32-3135-67EF-8E37-95CB61AD724B" name="VISIT_PRSC">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>74880C0D-DA6F-F46E-19CA-874F873CF6B9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89DADC39-CACE-EE88-8B0A-DFB30922AF76"/>
+<colUsage columnID="4247D74A-C973-7865-B648-69A06B4CCD4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

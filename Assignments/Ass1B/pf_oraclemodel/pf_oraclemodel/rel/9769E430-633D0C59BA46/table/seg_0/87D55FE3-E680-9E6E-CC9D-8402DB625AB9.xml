@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87D55FE3-E680-9E6E-CC9D-8402DB625AB9" name="Training_status">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>FC39DB7B-F9CF-402E-0200-08074509B002</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<abbreviation>Trn Stat</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="trnsts_complete" id="EAFE95B2-018B-899C-17AA-E21DA33A1587">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[training status completion status]]></commentInRDBMS>
+<generatorID>7487444E-C196-BA9C-CAEF-BC0DB50C6004</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trnsts_expry" id="A1DB4E8C-B0E9-7EE5-F326-A9A3E3A02D29">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet expiry date to course]]></commentInRDBMS>
+<generatorID>04515869-4417-6742-71DF-0D568E7B55A4</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_id" id="813A5EEB-248A-8A7F-63DA-9119130C69CB">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>C7C5854F-C4A0-BA6F-022B-667F5F84D0FA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AA235E3-849C-C624-CF03-6DC197A95154" referredColumn="C97CF11F-BBAE-860F-B3B5-DE9A6A0626BA"/>
+</associations>
+</Column>
+<Column name="trn_id" id="39AB0305-2486-527D-6F23-3761F233F349">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[training ID (surrogate PK)]]></commentInRDBMS>
+<generatorID>5C3251F9-92CB-0E20-34A3-1F1F80E63452</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E61367A-1005-6862-519B-C3FC57C38800" referredColumn="5AAE7E10-60D7-37E9-E377-B79DD5F9312C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF0075C2-D1DC-BC93-B44A-7FE714E728D2" name="Training_status__IDX">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DF769591-0E4A-CDAC-8749-056FA0041BE2</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="813A5EEB-248A-8A7F-63DA-9119130C69CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFFA2FBE-6A28-84C8-E893-36093AD3C2DE" name="Relation_12">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>DF769591-0E4A-CDAC-8749-056FA0041BE2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="813A5EEB-248A-8A7F-63DA-9119130C69CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12687957-A509-7219-CC38-86E3B8B1A5B2" name="trn_trnstatus">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>8F1E0893-A0FD-63A7-4493-2A750FAD1019</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39AB0305-2486-527D-6F23-3761F233F349"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F729A65C-DD48-23FF-735D-D4A63EC989E8" name="Training Instructor">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F729A65C-DD48-23FF-735D-D4A63EC989E8" name="Trn Instr">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:03:13 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
@@ -14,8 +14,9 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<shortName>Trn Instr</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="vet_specialization_id" id="B5D7FF18-0E77-3315-397C-E33666F7C137">
+<Attribute name="vet_spec_id" id="B5D7FF18-0E77-3315-397C-E33666F7C137">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:14:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
@@ -32,7 +33,7 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="traininginstructor_id" id="B195A227-1357-97B1-B253-919C8E2CBCD6">
+<Attribute name="trninstr_id" id="B195A227-1357-97B1-B253-919C8E2CBCD6">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:16:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[training instructor id]]></commentInRDBMS>
@@ -46,7 +47,7 @@
 <dataTypePrecision>20</dataTypePrecision>
 <ownDataTypeParameters>,20,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="traininginstructor_name" id="89053447-EBC6-663E-469A-E0FA13E6E353">
+<Attribute name="trninstr_name" id="89053447-EBC6-663E-469A-E0FA13E6E353">
 <createdBy>Dazza</createdBy>
 <createdTime>2023-09-13 13:16:53 UTC</createdTime>
 <commentInRDBMS><![CDATA[training instructor name]]></commentInRDBMS>

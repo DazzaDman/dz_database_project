@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="715C20BB-2859-9AA2-1414-97B81CACF0E5" name="Invoice">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>2D5E59CB-77A7-2D06-36E6-186F0B6A9A4B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="total_cost" id="AE230B46-91EC-7274-872D-AF9506AC3048">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[total cost]]></commentInRDBMS>
+<generatorID>17BC1FB9-0246-FF32-48B5-7C2DF6A8E536</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>50</dataTypeScale>
+<ownDataTypeParameters>,,50</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pay_method" id="78CB47CF-903F-4B6B-5590-A5C6E633E1E2">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[pay method]]></commentInRDBMS>
+<generatorID>85B2651A-3B5A-7D04-1644-DABDA87D95EA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<constraintName>chk_paymethod</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description="cash"/>
+<valueDef value="E" description="EFT"/>
+</listOfValues>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_id" id="B8972626-FB52-598A-195E-FA08390804E2">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>3B862E52-9B36-D010-96D2-C6A38BA58153</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E874AB99-703D-56C9-9700-6D8C955C8E07" referredColumn="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7"/>
+</associations>
+</Column>
+<Column name="visit_dateandtime" id="489E55D9-C67D-356F-A510-EF5504951053">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
+<generatorID>24D428ED-39DF-9879-A9D9-87DEA0773A15</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E874AB99-703D-56C9-9700-6D8C955C8E07" referredColumn="C6A0843F-1408-4DDA-EEF9-BC091BEBEF75"/>
+</associations>
+</Column>
+<Column name="Invoice_ID" id="56FB1CBE-41FC-9962-CBA2-72FFC2F0F98A">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B0D0714-D807-396E-B913-C593243C1206" name="Invoice_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="56FB1CBE-41FC-9962-CBA2-72FFC2F0F98A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BC0668F-9666-1796-5385-D0E33ABA7B95" name="Invoice__IDX">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ECC2550C-4A30-F099-E177-32EAEF250D76</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B8972626-FB52-598A-195E-FA08390804E2"/>
+<colUsage columnID="489E55D9-C67D-356F-A510-EF5504951053"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="343A8CF8-B6C8-F40A-9486-F3C8946A1415" name="visit_invoice">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>ECC2550C-4A30-F099-E177-32EAEF250D76</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8972626-FB52-598A-195E-FA08390804E2"/>
+<colUsage columnID="489E55D9-C67D-356F-A510-EF5504951053"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

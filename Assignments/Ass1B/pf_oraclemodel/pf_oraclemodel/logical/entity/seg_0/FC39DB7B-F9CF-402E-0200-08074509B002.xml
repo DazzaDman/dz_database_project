@@ -14,11 +14,12 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<shortName>Trn Stat</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="trainingstatus_completion" id="7487444E-C196-BA9C-CAEF-BC0DB50C6004">
+<Attribute name="trnsts_complete" id="7487444E-C196-BA9C-CAEF-BC0DB50C6004">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:40:43 UTC</createdTime>
-<commentInRDBMS><![CDATA[course completed status]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[training status completion status]]></commentInRDBMS>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
@@ -29,7 +30,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="trainingstatus_expiry_date" id="04515869-4417-6742-71DF-0D568E7B55A4">
+<Attribute name="trnsts_expry" id="04515869-4417-6742-71DF-0D568E7B55A4">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:41:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[vet expiry date to course]]></commentInRDBMS>
@@ -58,7 +59,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="training_id" id="5C3251F9-92CB-0E20-34A3-1F1F80E63452">
+<Attribute name="trn_id" id="5C3251F9-92CB-0E20-34A3-1F1F80E63452">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 11:57:13 UTC</createdTime>
 <commentInRDBMS><![CDATA[training ID (surrogate PK)]]></commentInRDBMS>

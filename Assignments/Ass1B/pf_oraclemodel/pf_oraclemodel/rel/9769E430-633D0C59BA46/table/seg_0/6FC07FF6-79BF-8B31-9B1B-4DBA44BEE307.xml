@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6FC07FF6-79BF-8B31-9B1B-4DBA44BEE307" name="Visit">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>6E045CDD-FCFB-FEB8-6BB4-E194764784AF</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="visit_dateandtime" id="C6A0843F-1408-4DDA-EEF9-BC091BEBEF75">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
+<generatorID>82958ED8-0513-3F17-DD0A-553835367F97</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_pet_weight" id="EBB3C179-4732-F3DB-5031-9C7301DD09D5">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit pet weight]]></commentInRDBMS>
+<generatorID>B4CAF56B-8591-7276-B9E6-19A5D90E72DA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_duration" id="330E0F82-556E-F1D8-09AD-87C57BAF0589">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit duration]]></commentInRDBMS>
+<generatorID>38A383B8-6F01-5734-E95F-B21BEE70B03E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="visit_notes" id="7894735C-0D68-9DFF-25C1-AF62CD370653">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit notes]]></commentInRDBMS>
+<generatorID>8543A130-3C55-D741-AEDA-575C6FF1A45E</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_id" id="90AE307E-14FD-AF0A-C608-86403643CD55">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80753329-75E4-BED4-849A-7EEB4105D2D4" referredColumn="B550818E-D4D9-1111-E5A4-B698F8EC3178"/>
+</associations>
+</Column>
+<Column name="pet_id" id="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>5F747B93-242C-F02C-B729-DDF2828CF879</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB6F1532-6598-EEA4-5037-B35159DF5A3F" referredColumn="559B4FD5-879B-F17C-DD20-542F2EB628B9"/>
+</associations>
+</Column>
+<Column name="vet_id" id="8A23B18D-86F1-3D48-AC64-7B220BC6955C">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>991FF2C9-DCE5-944F-E9F4-AA44CD845DDC</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33ED2DDC-E814-8556-AF97-FF747877596C" referredColumn="C97CF11F-BBAE-860F-B3B5-DE9A6A0626BA"/>
+</associations>
+</Column>
+<Column name="Invoice_Invoice_ID" id="3CB2E4DA-BBBA-8F5E-1B2E-E9A231B05A8E">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5EADDD2-C6F2-836A-8083-110E4C368B32" referredColumn="56FB1CBE-41FC-9962-CBA2-72FFC2F0F98A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7E4639E-A542-E56E-3DA5-3FF4027BD9AB" name="Visit_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>707A9355-411F-43D7-0C17-FBAD4EEA3A17</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7"/>
+<colUsage columnID="C6A0843F-1408-4DDA-EEF9-BC091BEBEF75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="695D5740-D832-03FB-CBD6-18769A733079" name="Visit__IDX">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ECC2550C-4A30-F099-E177-32EAEF250D76</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3CB2E4DA-BBBA-8F5E-1B2E-E9A231B05A8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FC932F0-1E98-3CB5-1BD2-86A891919AEB" name="CLINIC_VISIT">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>C7BDE7E5-52C2-80F3-0A15-E91985FF7405</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90AE307E-14FD-AF0A-C608-86403643CD55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F832752-AB50-CD0D-5AC3-7FFAB73204C8" name="PET_VISIT">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>75392477-1392-0896-51BC-EA67D97EA131</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4A06BBF-5003-4054-939A-DB1C4819213F" name="vet_visit">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>E12804AC-0AFF-5BEC-F517-62EE54939A86</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A23B18D-86F1-3D48-AC64-7B220BC6955C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1741AA44-646E-495E-F9AE-1CB6AF9C51C1" name="visit_invoicev1">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>ECC2550C-4A30-F099-E177-32EAEF250D76</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CB2E4DA-BBBA-8F5E-1B2E-E9A231B05A8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="prescription_adviced_dose" id="24A36E2C-7B4D-B276-EB3C-5BEE7F8065E9">
+<Attribute name="prsc_dose" id="24A36E2C-7B4D-B276-EB3C-5BEE7F8065E9">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:23:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[advice dose of drug]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="prescription_adviced_frequency" id="1B044E93-6459-ED30-8B3C-858662E1E7B1">
+<Attribute name="prsc_freq" id="1B044E93-6459-ED30-8B3C-858662E1E7B1">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 11:35:47 UTC</createdTime>
 <commentInRDBMS><![CDATA[advice frequency of drug]]></commentInRDBMS>
@@ -46,6 +46,7 @@
 <Attribute name="pet_id" id="32BBE25E-5318-FA49-5D30-FA94F8CE8BAE">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 12:42:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
 <generatorID>74880C0D-DA6F-F46E-19CA-874F873CF6B9</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -56,11 +57,12 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
 <Attribute name="visit_dateandtime" id="5F69B05F-D2F5-8D43-B876-D3D0A64F42CA">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 12:43:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
 <generatorID>74880C0D-DA6F-F46E-19CA-874F873CF6B9</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>

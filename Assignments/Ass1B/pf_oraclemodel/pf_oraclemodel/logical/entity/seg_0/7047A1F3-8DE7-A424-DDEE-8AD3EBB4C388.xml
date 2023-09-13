@@ -74,6 +74,7 @@
 <Attribute name="pet_id" id="6971BE3B-0794-7CF0-1FD6-C1E4170752E0">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 12:42:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
 <generatorID>A9FE32D0-D8F4-1431-80EE-27D1E41B681A</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -84,11 +85,12 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
 <Attribute name="visit_dateandtime" id="19343570-35A9-3BF0-1C08-23A4A9E59F8B">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 12:43:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
 <generatorID>A9FE32D0-D8F4-1431-80EE-27D1E41B681A</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>

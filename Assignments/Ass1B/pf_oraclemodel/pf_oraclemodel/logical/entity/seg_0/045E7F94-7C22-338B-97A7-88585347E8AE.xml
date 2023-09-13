@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="045E7F94-7C22-338B-97A7-88585347E8AE" name="Specialization">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="045E7F94-7C22-338B-97A7-88585347E8AE" name="Spec">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 11:37:06 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="vet_specialization_id" id="B965B921-53F0-6348-CFD9-649A8F6CF65D">
+<Attribute name="vet_spec_id" id="B965B921-53F0-6348-CFD9-649A8F6CF65D">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 11:38:34 UTC</createdTime>
 <commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
-<Attribute name="specialization_name" id="572DA2AA-AD9D-07F7-70A6-6A27E4CC2506">
+<Attribute name="spec_name" id="572DA2AA-AD9D-07F7-70A6-6A27E4CC2506">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 11:40:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[specialization name]]></commentInRDBMS>

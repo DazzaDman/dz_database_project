@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7503137B-962B-4968-3AD6-524A2D9B0BCF" name="Drug">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>7047A1F3-8DE7-A424-DDEE-8AD3EBB4C388</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="drug_id" id="206A4721-E985-A8B3-1D49-377940C33049">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<generatorID>AE2CD948-232F-AF00-1543-1AB99A8AD4C0</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_name" id="BEA64341-5466-D856-56AA-BD480D9A2CE9">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of drug]]></commentInRDBMS>
+<generatorID>37366A8F-49E5-8431-18A8-0E8862802A55</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_instruction" id="73B23136-E587-2449-EBFB-9A07E097212E">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[instruction of a drug]]></commentInRDBMS>
+<generatorID>1A710607-BA83-0CB8-CEF1-0F77952D395B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_linecost" id="422E3289-57DE-1B6F-25F7-5CAE6C1D1357">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug line cost]]></commentInRDBMS>
+<generatorID>891703E9-04E7-90F1-CE36-B4CD18705C6A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>50</dataTypeScale>
+<ownDataTypeParameters>,,50</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_id" id="A16A9F31-E6D2-7462-3798-F1EFC6A2D5D4">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>6971BE3B-0794-7CF0-1FD6-C1E4170752E0</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01A7A382-AAF6-6D97-C942-6E2163091B79" referredColumn="DCAE6FDE-5B10-247D-52BC-FD0F042B3CE7"/>
+</associations>
+</Column>
+<Column name="visit_dateandtime" id="FC0BBE9B-3AEE-EFCE-AED6-F3D640951BEE">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
+<generatorID>19343570-35A9-3BF0-1C08-23A4A9E59F8B</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01A7A382-AAF6-6D97-C942-6E2163091B79" referredColumn="C6A0843F-1408-4DDA-EEF9-BC091BEBEF75"/>
+</associations>
+</Column>
+<Column name="Invoice_Invoice_ID" id="61BB632A-487E-B378-4A6A-74C2CBCD09D8">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BEBA7C4-56CC-91DC-8F6F-B6BAC9A56E95" referredColumn="56FB1CBE-41FC-9962-CBA2-72FFC2F0F98A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43C820A9-1A80-853D-6F53-5B708D780F18" name="Drug_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>8A41FADB-EC67-0FBE-9BA4-FE0A9CC79952</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="206A4721-E985-A8B3-1D49-377940C33049"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CDA1127-F9E1-5836-86C7-5C4AB44D1D32" name="invoice_drug">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>A0DE69E7-8EFA-30A3-F9BC-98E06931D7EA</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61BB632A-487E-B378-4A6A-74C2CBCD09D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBA09A0B-9EAB-32A9-669A-69C67B698123" name="visit_drug">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>A9FE32D0-D8F4-1431-80EE-27D1E41B681A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A16A9F31-E6D2-7462-3798-F1EFC6A2D5D4"/>
+<colUsage columnID="FC0BBE9B-3AEE-EFCE-AED6-F3D640951BEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

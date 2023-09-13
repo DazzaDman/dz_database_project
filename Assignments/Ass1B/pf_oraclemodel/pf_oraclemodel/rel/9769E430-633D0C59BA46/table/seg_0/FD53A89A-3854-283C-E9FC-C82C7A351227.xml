@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD53A89A-3854-283C-E9FC-C82C7A351227" name="Spec">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>045E7F94-7C22-338B-97A7-88585347E8AE</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vet_spec_id" id="1ECB2F00-69F6-EBDB-7D87-32218E1FD98A">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
+<generatorID>B965B921-53F0-6348-CFD9-649A8F6CF65D</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="spec_name" id="66FF8719-5A1A-6D36-DE3C-C7FFC66F4C9A">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization name]]></commentInRDBMS>
+<generatorID>572DA2AA-AD9D-07F7-70A6-6A27E4CC2506</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_id" id="EA3EEBDC-9507-2DFE-331A-58D2FE70A242">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>CB2C0E97-B62D-7C66-1182-A8079138ABB4</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B51E568-5CAD-A7F3-4544-0EEC3C2C835F" referredColumn="C97CF11F-BBAE-860F-B3B5-DE9A6A0626BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1397868C-8F84-C2E9-DB3D-EE2D3976270E" name="Specialization_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>590CF23C-11C2-D1C5-F6F2-ED287DB33258</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1ECB2F00-69F6-EBDB-7D87-32218E1FD98A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="639154F2-2781-A59A-A312-08594B590D2A" name="Specialization_NK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>861D3D43-9DD2-82E1-7FD8-856A42240028</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA3EEBDC-9507-2DFE-331A-58D2FE70A242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE20640D-40B7-7864-C492-E1C7700E6DC8" name="VET_TRAINING">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>4E872EEF-268F-7203-996B-A6385F4927A2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA3EEBDC-9507-2DFE-331A-58D2FE70A242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

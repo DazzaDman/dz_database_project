@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D199B24-A23A-9BF8-A9BB-8B1FA8A095E1" name="PRSC_DRUG">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Drug_drug_id" id="3C6A919F-9095-F9D6-6B40-02F2AFE60E91">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF26A84E-AA08-CC91-92E5-CE8748A93D25" referredColumn="206A4721-E985-A8B3-1D49-377940C33049"/>
+</associations>
+</Column>
+<Column name="Prescription_pet_id" id="D0BCAC7A-6E22-9AC1-4C1F-73F6D0108439">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF4F9EAC-16B2-F5CD-3D8A-51223C368391" referredColumn="89DADC39-CACE-EE88-8B0A-DFB30922AF76"/>
+</associations>
+</Column>
+<Column name="Prescription_visit_dateandtime" id="81C6C9B3-5391-938A-D77F-A2FEFA9BCBDE">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF4F9EAC-16B2-F5CD-3D8A-51223C368391" referredColumn="4247D74A-C973-7865-B648-69A06B4CCD4A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C624BDC-B056-933E-12F9-B9715F1E8A43" name="PRSC_DRUG_PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C6A919F-9095-F9D6-6B40-02F2AFE60E91"/>
+<colUsage columnID="D0BCAC7A-6E22-9AC1-4C1F-73F6D0108439"/>
+<colUsage columnID="81C6C9B3-5391-938A-D77F-A2FEFA9BCBDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C671C7B-09B9-C318-DDF9-FE03B058C50C" name="PRSC_DRUG_Drug_FK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>1EC44F62-8BB4-1EF5-B93D-15D56A2BAECB</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C6A919F-9095-F9D6-6B40-02F2AFE60E91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7743B802-7F19-F6DC-4F73-1FDBFB052279" name="PRSC_DRUG_Prescription_FK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 14:06:07 UTC</createdTime>
+<generatorID>1EC44F62-8BB4-1EF5-B93D-15D56A2BAECB</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0BCAC7A-6E22-9AC1-4C1F-73F6D0108439"/>
+<colUsage columnID="81C6C9B3-5391-938A-D77F-A2FEFA9BCBDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
