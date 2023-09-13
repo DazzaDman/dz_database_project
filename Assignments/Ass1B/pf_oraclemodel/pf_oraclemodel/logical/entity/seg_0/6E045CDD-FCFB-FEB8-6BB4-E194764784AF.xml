@@ -71,5 +71,49 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="clinic_id" id="DD0C4DD2-1B78-3869-D9A8-ED925C30F143">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 10:40:49 UTC</createdTime>
+<generatorID>C7BDE7E5-52C2-80F3-0A15-E91985FF7405</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>5D622A52-A942-EA4C-282F-9620D0F53653</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="animal_id" id="5F747B93-242C-F02C-B729-DDF2828CF879">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 10:47:17 UTC</createdTime>
+<generatorID>75392477-1392-0896-51BC-EA67D97EA131</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>F0B57880-79AA-48DC-B53E-5C4E7AFE5C8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="707A9355-411F-43D7-0C17-FBAD4EEA3A17" name="Visit PK">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 10:40:49 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

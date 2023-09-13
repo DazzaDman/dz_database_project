@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="prescription_advice_dose" id="24A36E2C-7B4D-B276-EB3C-5BEE7F8065E9">
+<Attribute name="prescription_adviced_dose" id="24A36E2C-7B4D-B276-EB3C-5BEE7F8065E9">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:23:20 UTC</createdTime>
 <commentInRDBMS><![CDATA[advice dose of drug]]></commentInRDBMS>
@@ -28,6 +28,21 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_id" id="5FA3681E-ABA1-AFDE-EECF-FFFA8181BD98">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 10:55:48 UTC</createdTime>
+<generatorID>74880C0D-DA6F-F46E-19CA-874F873CF6B9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

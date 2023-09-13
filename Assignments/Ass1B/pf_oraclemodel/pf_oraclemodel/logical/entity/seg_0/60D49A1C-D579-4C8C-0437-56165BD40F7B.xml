@@ -70,6 +70,21 @@
 <dataTypeSize>10 CHAR</dataTypeSize>
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="owner_id" id="254C57B0-25CE-D39A-8B2D-4C0D2EA987C2">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 10:53:32 UTC</createdTime>
+<generatorID>64C4546F-2901-CB28-2F8E-95F3ACDC8D57</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>12361B1A-47E8-FB81-627B-0D385691C9DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C45403FF-209B-A314-713B-24D682632270" name="Pet PK">
