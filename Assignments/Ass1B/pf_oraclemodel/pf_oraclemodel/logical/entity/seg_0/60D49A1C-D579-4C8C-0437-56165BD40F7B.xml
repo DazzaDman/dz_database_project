@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="animal_id" id="F0B57880-79AA-48DC-B53E-5C4E7AFE5C8E">
+<Attribute name="pet_id" id="F0B57880-79AA-48DC-B53E-5C4E7AFE5C8E">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:18:10 UTC</createdTime>
 <commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
-<Attribute name="animal_name" id="47D1C112-146A-D700-6162-C4B48335C0EB">
+<Attribute name="pet_name" id="47D1C112-146A-D700-6162-C4B48335C0EB">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:19:02 UTC</createdTime>
 <commentInRDBMS><![CDATA[animal name]]></commentInRDBMS>
@@ -43,7 +43,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="animal_dob" id="843C8EE0-11AB-0A86-AD12-EB4434141968">
+<Attribute name="pet_dob" id="843C8EE0-11AB-0A86-AD12-EB4434141968">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:19:32 UTC</createdTime>
 <commentInRDBMS><![CDATA[animal date of birth]]></commentInRDBMS>
@@ -56,7 +56,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="animal_type" id="48965E1E-5511-226B-6236-2B0BDE5A410A">
+<Attribute name="pet_type" id="48965E1E-5511-226B-6236-2B0BDE5A410A">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:19:53 UTC</createdTime>
 <commentInRDBMS><![CDATA[animal type]]></commentInRDBMS>
