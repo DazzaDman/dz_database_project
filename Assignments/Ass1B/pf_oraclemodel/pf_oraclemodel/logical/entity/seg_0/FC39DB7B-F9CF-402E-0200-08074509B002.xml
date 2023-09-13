@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="completed_status" id="7487444E-C196-BA9C-CAEF-BC0DB50C6004">
+<Attribute name="trainingstatus_completion" id="7487444E-C196-BA9C-CAEF-BC0DB50C6004">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:40:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[course completed status]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="expiry_date" id="04515869-4417-6742-71DF-0D568E7B55A4">
+<Attribute name="trainingstatus_expiry_date" id="04515869-4417-6742-71DF-0D568E7B55A4">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:41:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[vet expiry date to course]]></commentInRDBMS>
@@ -56,7 +56,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="training_id" id="5C3251F9-92CB-0E20-34A3-1F1F80E63452">
 <createdBy>zejiaheli</createdBy>
@@ -72,7 +72,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 </Entity>

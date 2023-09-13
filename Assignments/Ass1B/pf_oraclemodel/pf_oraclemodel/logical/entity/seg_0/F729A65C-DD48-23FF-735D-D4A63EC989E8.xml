@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F729A65C-DD48-23FF-735D-D4A63EC989E8" name="Training Instructor">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:03:13 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="vet_specialization_id" id="B5D7FF18-0E77-3315-397C-E33666F7C137">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:14:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
+<generatorID>F27CB5B5-2846-51AA-DC5E-ECFA0CCD6B6C</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B965B921-53F0-6348-CFD9-649A8F6CF65D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="traininginstructor_id" id="B195A227-1357-97B1-B253-919C8E2CBCD6">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[training instructor id]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="traininginstructor_name" id="89053447-EBC6-663E-469A-E0FA13E6E353">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:16:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[training instructor name]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="49CADF0A-DB1C-C07B-7A72-816AB6C56F06" name="Training Instructor PK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:16:41 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B195A227-1357-97B1-B253-919C8E2CBCD6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

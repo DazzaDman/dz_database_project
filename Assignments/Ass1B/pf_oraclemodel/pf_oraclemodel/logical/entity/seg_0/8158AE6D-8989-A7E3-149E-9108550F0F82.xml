@@ -51,7 +51,6 @@
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -61,6 +60,7 @@
 <Attribute name="pet_id" id="8C0EB8E9-47F1-B624-7EB0-8DA2382FC1B0">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 12:42:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
 <generatorID>9D4EC25D-A0E3-47D2-D3D1-42ED8BC5608B</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -76,6 +76,7 @@
 <Attribute name="visit_dateandtime" id="E6A7E5CE-0AB2-CF8A-C1BF-48CFA86A7F46">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 12:43:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
 <generatorID>9D4EC25D-A0E3-47D2-D3D1-42ED8BC5608B</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>

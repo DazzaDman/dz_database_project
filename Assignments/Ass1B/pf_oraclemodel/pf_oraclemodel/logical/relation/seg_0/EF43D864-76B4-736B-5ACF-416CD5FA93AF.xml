@@ -1,22 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="training_specialiazation" directorySegmentName="seg_0" id="F0FB07EE-2C9A-8BBD-03A5-91B56D1DB0F1">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 11:50:24 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="traininginstructor_training" directorySegmentName="seg_0" id="EF43D864-76B4-736B-5ACF-416CD5FA93AF">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:03:35 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<sourcePk>5AE31ACC-F94A-E3F0-14A5-BB8CC8656DA6</sourcePk>
-<targetPk>590CF23C-11C2-D1C5-F6F2-ED287DB33258</targetPk>
+<targetPk>49CADF0A-DB1C-C07B-7A72-816AB6C56F06</targetPk>
 <identifying>false</identifying>
-<nameOnSource>is based on</nameOnSource>
+<nameOnSource>provides</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
-<sourceCardinality>1</sourceCardinality>
+<sourceCardinality>*</sourceCardinality>
 <sourceEntity>73ECDFD9-D8B8-18C2-7ECA-0131A91C6A2A</sourceEntity>
 <targetCardinalityString>1</targetCardinalityString>
-<targetEntity>045E7F94-7C22-338B-97A7-88585347E8AE</targetEntity>
+<targetEntity>F729A65C-DD48-23FF-735D-D4A63EC989E8</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

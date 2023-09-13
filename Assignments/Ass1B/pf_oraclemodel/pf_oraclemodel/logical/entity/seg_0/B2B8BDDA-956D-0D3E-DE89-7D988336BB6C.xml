@@ -57,5 +57,17 @@
 <attributeRef>02038B2A-D852-790C-B696-06554E640323</attributeRef>
 </usedAttributes>
 </identifier>
+<identifier id="40E86EA4-D35B-B84B-7833-29B6EAA4C887" name="Animal type NK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:37:43 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<newElementsIDs>02038B2A-D852-790C-B696-06554E640323</newElementsIDs>
+<usedAttributes>
+<attributeRef>02038B2A-D852-790C-B696-06554E640323</attributeRef>
+</usedAttributes>
+</identifier>
 </identifiers>
 </Entity>

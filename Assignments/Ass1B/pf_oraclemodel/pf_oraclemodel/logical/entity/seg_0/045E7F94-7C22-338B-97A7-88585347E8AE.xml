@@ -57,23 +57,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="training_id" id="74C35DBD-2E6C-6219-8AA6-DF1A61186CD7">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 11:50:24 UTC</createdTime>
-<commentInRDBMS><![CDATA[training ID (surrogate PK)]]></commentInRDBMS>
-<generatorID>F0FB07EE-2C9A-8BBD-03A5-91B56D1DB0F1</generatorID>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
-</engineerTo>
-<referedAttribute>383BB7C1-1CC1-234B-2886-63DB270A9EDB</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -87,6 +71,18 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B965B921-53F0-6348-CFD9-649A8F6CF65D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="861D3D43-9DD2-82E1-7FD8-856A42240028" name="Specialization NK">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 13:22:00 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<newElementsIDs>CB2C0E97-B62D-7C66-1182-A8079138ABB4</newElementsIDs>
+<usedAttributes>
+<attributeRef>CB2C0E97-B62D-7C66-1182-A8079138ABB4</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
