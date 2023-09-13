@@ -48,52 +48,33 @@
 </listOfValues>
 <ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clinic_id" id="8FEC847C-A9C4-865C-A6F7-F92BF750627A">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 12:16:23 UTC</createdTime>
-<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<Attribute name="pet_id" id="3B862E52-9B36-D010-96D2-C6A38BA58153">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 12:42:47 UTC</createdTime>
 <generatorID>ECC2550C-4A30-F099-E177-32EAEF250D76</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<referedAttribute>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="drug_id" id="29684854-A980-6393-1A7F-7B7162E7FFA2">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 12:22:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
-<generatorID>A0DE69E7-8EFA-30A3-F9BC-98E06931D7EA</generatorID>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
-</engineerTo>
-<referedAttribute>AE2CD948-232F-AF00-1543-1AB99A8AD4C0</referedAttribute>
+<referedAttribute>5F747B93-242C-F02C-B729-DDF2828CF879</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="service_code" id="93B4040E-FAC8-55B1-AB29-D648F884DA1C">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 12:22:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[service code]]></commentInRDBMS>
-<generatorID>123EDA4F-9682-42AD-99D1-4410AD267315</generatorID>
+<Attribute name="visit_dateandtime" id="24D428ED-39DF-9879-A9D9-87DEA0773A15">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 12:43:18 UTC</createdTime>
+<generatorID>ECC2550C-4A30-F099-E177-32EAEF250D76</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<referedAttribute>77EBB888-6CEF-1E48-24AD-1B5DC3375F0E</referedAttribute>
+<referedAttribute>82958ED8-0513-3F17-DD0A-553835367F97</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

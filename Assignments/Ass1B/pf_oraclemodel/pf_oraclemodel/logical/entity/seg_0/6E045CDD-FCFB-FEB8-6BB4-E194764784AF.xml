@@ -85,7 +85,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pet_id" id="5F747B93-242C-F02C-B729-DDF2828CF879">
 <createdBy>ariar</createdBy>
@@ -101,7 +101,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
-<ownDataTypeParameters>,,10</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="vet_id" id="991FF2C9-DCE5-944F-E9F4-AA44CD845DDC">
 <createdBy>zejiaheli</createdBy>
@@ -117,7 +117,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -130,7 +130,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</attributeRef>
+<attributeRef>5F747B93-242C-F02C-B729-DDF2828CF879</attributeRef>
+<attributeRef>82958ED8-0513-3F17-DD0A-553835367F97</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

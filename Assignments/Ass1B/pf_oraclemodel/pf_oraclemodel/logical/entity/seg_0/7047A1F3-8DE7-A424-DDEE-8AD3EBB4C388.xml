@@ -71,20 +71,33 @@
 <dataTypeScale>50</dataTypeScale>
 <ownDataTypeParameters>,,50</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clinic_id" id="7D6701C4-0C07-01D1-DFFF-B761EC52BB5A">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 12:08:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<Attribute name="pet_id" id="6971BE3B-0794-7CF0-1FD6-C1E4170752E0">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 12:42:47 UTC</createdTime>
 <generatorID>A9FE32D0-D8F4-1431-80EE-27D1E41B681A</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<referedAttribute>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</referedAttribute>
+<referedAttribute>5F747B93-242C-F02C-B729-DDF2828CF879</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_dateandtime" id="19343570-35A9-3BF0-1C08-23A4A9E59F8B">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 12:43:18 UTC</createdTime>
+<generatorID>A9FE32D0-D8F4-1431-80EE-27D1E41B681A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>82958ED8-0513-3F17-DD0A-553835367F97</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

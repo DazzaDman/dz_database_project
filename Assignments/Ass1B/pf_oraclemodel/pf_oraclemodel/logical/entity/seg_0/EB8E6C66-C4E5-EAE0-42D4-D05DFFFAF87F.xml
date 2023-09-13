@@ -43,21 +43,49 @@
 <dataTypeSize>50 CHAR</dataTypeSize>
 <ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clinic_id" id="5FA3681E-ABA1-AFDE-EECF-FFFA8181BD98">
+<Attribute name="pet_id" id="32BBE25E-5318-FA49-5D30-FA94F8CE8BAE">
 <createdBy>ariar</createdBy>
-<createdTime>2023-09-13 10:55:48 UTC</createdTime>
-<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<createdTime>2023-09-13 12:42:47 UTC</createdTime>
 <generatorID>74880C0D-DA6F-F46E-19CA-874F873CF6B9</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<referedAttribute>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</referedAttribute>
+<referedAttribute>5F747B93-242C-F02C-B729-DDF2828CF879</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_dateandtime" id="5F69B05F-D2F5-8D43-B876-D3D0A64F42CA">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 12:43:18 UTC</createdTime>
+<generatorID>74880C0D-DA6F-F46E-19CA-874F873CF6B9</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>82958ED8-0513-3F17-DD0A-553835367F97</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="960998E3-93F4-A074-972A-A5EC84365D5C" name="Prescription PK">
+<createdBy>ariar</createdBy>
+<createdTime>2023-09-13 12:43:52 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32BBE25E-5318-FA49-5D30-FA94F8CE8BAE</attributeRef>
+<attributeRef>5F69B05F-D2F5-8D43-B876-D3D0A64F42CA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
