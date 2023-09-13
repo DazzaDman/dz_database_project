@@ -5,6 +5,10 @@
 
 --student id: 33220085
 --student name: Daniel Zalewski
+
+--student id: 34210571
+--student name: Aria Rana Mora
+
 -- Capture run of script in file called custorders_schema_output.txt
 
 set echo on
