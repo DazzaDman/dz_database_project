@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC39DB7B-F9CF-402E-0200-08074509B002" name="Vet_Training">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC39DB7B-F9CF-402E-0200-08074509B002" name="Training status">
 <createdBy>zejiaheli</createdBy>
 <createdTime>2023-09-13 08:40:23 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
@@ -40,6 +40,38 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="C7C5854F-C4A0-BA6F-022B-667F5F84D0FA">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:52:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>DF769591-0E4A-CDAC-8749-056FA0041BE2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>5E89B0BA-CF25-B043-5ED9-60B098F5F6BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="training_id" id="5C3251F9-92CB-0E20-34A3-1F1F80E63452">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:57:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[training ID (surrogate PK)]]></commentInRDBMS>
+<generatorID>8F1E0893-A0FD-63A7-4493-2A750FAD1019</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>383BB7C1-1CC1-234B-2886-63DB270A9EDB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -71,6 +71,22 @@
 <dataTypeScale>50</dataTypeScale>
 <ownDataTypeParameters>,,50</ownDataTypeParameters>
 </Attribute>
+<Attribute name="clinic_id" id="7D6701C4-0C07-01D1-DFFF-B761EC52BB5A">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 12:08:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>A9FE32D0-D8F4-1431-80EE-27D1E41B681A</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8A41FADB-EC67-0FBE-9BA4-FE0A9CC79952" name="Drug PK">

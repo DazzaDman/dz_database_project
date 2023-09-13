@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VET_TRAINING" directorySegmentName="seg_0" id="4E872EEF-268F-7203-996B-A6385F4927A2">
-<createdBy>Dazza</createdBy>
-<createdTime>2023-09-13 07:26:55 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="training_training status" directorySegmentName="seg_0" id="8F1E0893-A0FD-63A7-4493-2A750FAD1019">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:57:13 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<sourcePk>754ED87A-1F0D-40D0-545E-07C617D73BB3</sourcePk>
+<sourcePk>5AE31ACC-F94A-E3F0-14A5-BB8CC8656DA6</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>owns</nameOnSource>
+<nameOnSource>produce </nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>2A6FFC52-31C7-5F46-B390-CA58C4447FC1</sourceEntity>
+<sourceEntity>73ECDFD9-D8B8-18C2-7ECA-0131A91C6A2A</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>045E7F94-7C22-338B-97A7-88585347E8AE</targetEntity>
+<targetEntity>FC39DB7B-F9CF-402E-0200-08074509B002</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

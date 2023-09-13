@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="visit_invoice" directorySegmentName="seg_0" id="ECC2550C-4A30-F099-E177-32EAEF250D76">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 12:16:23 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<sourcePk>707A9355-411F-43D7-0C17-FBAD4EEA3A17</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>produce</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6E045CDD-FCFB-FEB8-6BB4-E194764784AF</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>2D5E59CB-77A7-2D06-36E6-186F0B6A9A4B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

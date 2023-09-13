@@ -1,21 +1,22 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PRESCRIPTION_DRUG" directorySegmentName="seg_0" id="1EC44F62-8BB4-1EF5-B93D-15D56A2BAECB">
-<createdBy>ariar</createdBy>
-<createdTime>2023-09-13 10:56:59 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="invoice_drug" directorySegmentName="seg_0" id="A0DE69E7-8EFA-30A3-F9BC-98E06931D7EA">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 12:20:22 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
 <sourcePk>8A41FADB-EC67-0FBE-9BA4-FE0A9CC79952</sourcePk>
+<targetPk>8A41FADB-EC67-0FBE-9BA4-FE0A9CC79952</targetPk>
 <identifying>false</identifying>
-<nameOnSource>contains</nameOnSource>
+<nameOnSource>includes </nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
-<sourceCardinality>*</sourceCardinality>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
 <sourceEntity>7047A1F3-8DE7-A424-DDEE-8AD3EBB4C388</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>EB8E6C66-C4E5-EAE0-42D4-D05DFFFAF87F</targetEntity>
+<targetEntity>2D5E59CB-77A7-2D06-36E6-186F0B6A9A4B</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

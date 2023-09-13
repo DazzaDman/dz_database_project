@@ -73,6 +73,7 @@
 <Attribute name="owner_id" id="254C57B0-25CE-D39A-8B2D-4C0D2EA987C2">
 <createdBy>ariar</createdBy>
 <createdTime>2023-09-13 10:53:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner id]]></commentInRDBMS>
 <generatorID>64C4546F-2901-CB28-2F8E-95F3ACDC8D57</generatorID>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
@@ -83,6 +84,42 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_status" id="8D672B1D-2E68-4274-9CDB-6C53C0589DBE">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:58:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet status (whether it's dead or alive)]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<constraintName>chk_petstatus</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="alive"/>
+<valueDef value="D" description="dead"/>
+</listOfValues>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="animal_typeid" id="4BBB63AA-290A-A812-6845-84D349E08912">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 12:10:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[animal type id]]></commentInRDBMS>
+<generatorID>272BA1BA-D4E5-9B01-BD77-BF568DD96222</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>02038B2A-D852-790C-B696-06554E640323</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>100</dataTypeScale>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

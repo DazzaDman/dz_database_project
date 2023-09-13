@@ -89,6 +89,22 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="vet_specialization_id" id="79762121-47A4-30CF-FEC2-29622AD8CB7F">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:51:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
+<generatorID>F0FB07EE-2C9A-8BBD-03A5-91B56D1DB0F1</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>B965B921-53F0-6348-CFD9-649A8F6CF65D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5AE31ACC-F94A-E3F0-14A5-BB8CC8656DA6" name="Training PK">

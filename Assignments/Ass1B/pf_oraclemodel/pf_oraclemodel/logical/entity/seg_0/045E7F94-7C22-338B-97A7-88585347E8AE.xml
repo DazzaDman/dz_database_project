@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8158AE6D-8989-A7E3-149E-9108550F0F82" name="Service">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="045E7F94-7C22-338B-97A7-88585347E8AE" name="Specialization">
 <createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 08:42:40 UTC</createdTime>
+<createdTime>2023-09-13 11:37:06 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
@@ -15,59 +15,60 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="service_code" id="77EBB888-6CEF-1E48-24AD-1B5DC3375F0E">
+<Attribute name="vet_specialization_id" id="B965B921-53F0-6348-CFD9-649A8F6CF65D">
 <createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 08:42:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[service code]]></commentInRDBMS>
+<createdTime>2023-09-13 11:38:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization id]]></commentInRDBMS>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="service_description" id="B4E8F580-5CCF-C6C0-B48A-8DB3AB0B4D07">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 08:43:08 UTC</createdTime>
-<commentInRDBMS><![CDATA[service description]]></commentInRDBMS>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50 CHAR</dataTypeSize>
-<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="service_linecost" id="8D21B761-C038-832A-DA26-6A974E5273D0">
-<createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 08:43:31 UTC</createdTime>
-<commentInRDBMS><![CDATA[service line cost]]></commentInRDBMS>
-<ownerDesignName>pf_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypeScale>50</dataTypeScale>
-<ownDataTypeParameters>,,50</ownDataTypeParameters>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
 </Attribute>
-<Attribute name="clinic_id" id="51E67382-7120-7E4B-37FF-B418DB36B718">
+<Attribute name="specialization_name" id="572DA2AA-AD9D-07F7-70A6-6A27E4CC2506">
 <createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 12:07:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
-<generatorID>9D4EC25D-A0E3-47D2-D3D1-42ED8BC5608B</generatorID>
+<createdTime>2023-09-13 11:40:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[specialization name]]></commentInRDBMS>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
-<referedAttribute>DD0C4DD2-1B78-3869-D9A8-ED925C30F143</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="CB2C0E97-B62D-7C66-1182-A8079138ABB4">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:43:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>4E872EEF-268F-7203-996B-A6385F4927A2</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>5E89B0BA-CF25-B043-5ED9-60B098F5F6BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="training_id" id="74C35DBD-2E6C-6219-8AA6-DF1A61186CD7">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 11:50:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[training ID (surrogate PK)]]></commentInRDBMS>
+<generatorID>F0FB07EE-2C9A-8BBD-03A5-91B56D1DB0F1</generatorID>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<referedAttribute>383BB7C1-1CC1-234B-2886-63DB270A9EDB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -76,16 +77,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="9E7A07B9-A2FE-3A65-D320-369E573B57DE" name="Service PK">
+<identifier id="590CF23C-11C2-D1C5-F6F2-ED287DB33258" name="Specialization PK">
 <createdBy>zejiaheli</createdBy>
-<createdTime>2023-09-13 08:42:54 UTC</createdTime>
+<createdTime>2023-09-13 11:38:47 UTC</createdTime>
 <ownerDesignName>pf_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>77EBB888-6CEF-1E48-24AD-1B5DC3375F0E</attributeRef>
+<attributeRef>B965B921-53F0-6348-CFD9-649A8F6CF65D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="visit_service" directorySegmentName="seg_0" id="9D4EC25D-A0E3-47D2-D3D1-42ED8BC5608B">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 12:06:04 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<sourcePk>707A9355-411F-43D7-0C17-FBAD4EEA3A17</sourcePk>
+<targetPk>9E7A07B9-A2FE-3A65-D320-369E573B57DE</targetPk>
+<identifying>false</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6E045CDD-FCFB-FEB8-6BB4-E194764784AF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8158AE6D-8989-A7E3-149E-9108550F0F82</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
