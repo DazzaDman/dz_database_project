@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLINIC_TRAINING" directorySegmentName="seg_0" id="B1EB94FE-4B47-8603-F870-E9997F8F5546">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 07:27:44 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<sourcePk>77EDCB45-EA9E-6968-3B9A-B933B162EEFD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>hosts</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>79E269A3-33E6-A377-89DC-33D1582268B1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>73ECDFD9-D8B8-18C2-7ECA-0131A91C6A2A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

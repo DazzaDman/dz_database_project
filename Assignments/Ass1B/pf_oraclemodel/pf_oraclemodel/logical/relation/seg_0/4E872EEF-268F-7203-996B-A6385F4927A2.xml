@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VET_TRAINING" directorySegmentName="seg_0" id="4E872EEF-268F-7203-996B-A6385F4927A2">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 07:26:55 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<sourcePk>754ED87A-1F0D-40D0-545E-07C617D73BB3</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>provides</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A6FFC52-31C7-5F46-B390-CA58C4447FC1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>73ECDFD9-D8B8-18C2-7ECA-0131A91C6A2A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
