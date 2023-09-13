@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7047A1F3-8DE7-A424-DDEE-8AD3EBB4C388" name="Drug">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:24:05 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="drug_id" id="AE2CD948-232F-AF00-1543-1AB99A8AD4C0">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:24:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_name" id="37366A8F-49E5-8431-18A8-0E8862802A55">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:24:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of drug]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_instruction" id="1A710607-BA83-0CB8-CEF1-0F77952D395B">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:24:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[instruction of a drug]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_linecost" id="891703E9-04E7-90F1-CE36-B4CD18705C6A">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:44:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug line cost]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>50</dataTypeScale>
+<ownDataTypeParameters>,,50</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8A41FADB-EC67-0FBE-9BA4-FE0A9CC79952" name="Drug PK">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:24:21 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AE2CD948-232F-AF00-1543-1AB99A8AD4C0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

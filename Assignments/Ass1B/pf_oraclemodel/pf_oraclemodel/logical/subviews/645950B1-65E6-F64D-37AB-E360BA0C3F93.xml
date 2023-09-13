@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="645950B1-65E6-F64D-37AB-E360BA0C3F93">
-<createdBy>Dazza</createdBy>
-<modifiedBy>Dazza</modifiedBy>
+<createdBy>Daniel Zalewski, Aria Rana Mora, Zejiahe Li </createdBy>
+<modifiedBy>Daniel Zalewski, Aria Rana Mora, Zejiahe Li </modifiedBy>
 <createdTime>2023-09-13 07:04:07 UTC</createdTime>
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
@@ -11,6 +11,8 @@
 <gridEnabled>false</gridEnabled>
 <showGrid>true</showGrid>
 <diagramColor>-1</diagramColor>
+<legendPosX>11</legendPosX>
+<legendPosY>13</legendPosY>
 <display>false</display>
 <notation>2</notation>
 <showAllDetails>false</showAllDetails>
@@ -21,9 +23,28 @@
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="96" y="190" width="208" height="139"/>
 </OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2D5E59CB-77A7-2D06-36E6-186F0B6A9A4B" otype="Entity" vid="060651FA-1198-CF79-F432-99E328C29BAD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="950" y="637" width="167" height="153"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="60D49A1C-D579-4C8C-0437-56165BD40F7B" otype="Entity" vid="CAE9EA7C-2E10-49D5-9FD9-F0471684BE85">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="696" y="438" width="160" height="154"/>
+</OView>
 <OView class="oracle.dbtools.crest.swingui.TVLegend" oid="621C5552-149E-33C7-DFEB-485EB200DC41" otype="Legend" vid="BDC1453B-CF8A-2EF5-BF24-F2C347453C8C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="10" y="10" width="232" height="135"/>
+<bounds x="11" y="13" width="300" height="128"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-1</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="6E045CDD-FCFB-FEB8-6BB4-E194764784AF" otype="Entity" vid="356FC6B8-2472-8E6A-835D-F47A576480DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="692" y="188" width="153" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="7047A1F3-8DE7-A424-DDEE-8AD3EBB4C388" otype="Entity" vid="FAF04FF1-F021-7174-9448-040187278F2D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1127" y="208" width="191" height="96"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="73ECDFD9-D8B8-18C2-7ECA-0131A91C6A2A" otype="Entity" vid="51111F50-B710-BB48-DE7D-69D526D65808">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -32,6 +53,22 @@
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="79E269A3-33E6-A377-89DC-33D1582268B1" otype="Entity" vid="4E9FC3B8-DB40-8798-D301-21D2EB549627">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <bounds x="461" y="189" width="173" height="132"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="8158AE6D-8989-A7E3-149E-9108550F0F82" otype="Entity" vid="EC58A1B6-CB92-CEDA-A805-71273D0764AC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="964" y="435" width="179" height="119"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="E4EE29D9-805C-1528-8BD1-6CFF5E1CEBC3" otype="Entity" vid="522D09B1-B040-104E-0BD4-19495E422B40">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="698" y="633" width="157" height="162"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="EB8E6C66-C4E5-EAE0-42D4-D05DFFFAF87F" otype="Entity" vid="D23B8A04-3E89-F89A-D846-5598BA2A61F5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="907" y="195" width="165" height="117"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="FC39DB7B-F9CF-402E-0200-08074509B002" otype="Entity" vid="DBDD1CEE-4C15-DDF2-330C-CA99F30F2D9C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="133" y="622" width="230" height="136"/>
 </OView>
 </objectViews>
 <connectors>

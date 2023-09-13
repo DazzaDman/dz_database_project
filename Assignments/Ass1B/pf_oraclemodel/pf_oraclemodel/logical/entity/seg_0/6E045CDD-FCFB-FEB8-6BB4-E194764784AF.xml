@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E045CDD-FCFB-FEB8-6BB4-E194764784AF" name="Visit">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:07:09 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="visit_dateandtime" id="82958ED8-0513-3F17-DD0A-553835367F97">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:07:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit date and time]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_pet_weight" id="B4CAF56B-8591-7276-B9E6-19A5D90E72DA">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:07:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit pet weight]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_duration" id="38A383B8-6F01-5734-E95F-B21BEE70B03E">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:08:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit duration]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,,10</ownDataTypeParameters>
+</Attribute>
+<Attribute name="visit_notes" id="8543A130-3C55-D741-AEDA-575C6FF1A45E">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:09:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[visit notes]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D5E59CB-77A7-2D06-36E6-186F0B6A9A4B" name="Invoice">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:45:04 UTC</createdTime>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="total_cost" id="17BC1FB9-0246-FF32-48B5-7C2DF6A8E536">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:45:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[total cost]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>50</dataTypeScale>
+<ownDataTypeParameters>,,50</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pay_method" id="85B2651A-3B5A-7D04-1644-DABDA87D95EA">
+<createdBy>zejiaheli</createdBy>
+<createdTime>2023-09-13 08:45:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[pay method]]></commentInRDBMS>
+<ownerDesignName>pf_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="9769E430-2C68-EEC8-D3B4-633D0C59BA46" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
