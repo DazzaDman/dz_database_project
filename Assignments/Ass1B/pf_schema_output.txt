@@ -1,0 +1,994 @@
+SQL> 
+SQL> 
+SQL> DROP TABLE animal_type CASCADE CONSTRAINTS;
+
+Table ANIMAL_TYPE dropped.
+
+SQL> 
+SQL> DROP TABLE clinic CASCADE CONSTRAINTS;
+
+Table CLINIC dropped.
+
+SQL> 
+SQL> DROP TABLE drug CASCADE CONSTRAINTS;
+
+Table DRUG dropped.
+
+SQL> 
+SQL> DROP TABLE invoice CASCADE CONSTRAINTS;
+
+Table INVOICE dropped.
+
+SQL> 
+SQL> DROP TABLE owner CASCADE CONSTRAINTS;
+
+Table OWNER dropped.
+
+SQL> 
+SQL> DROP TABLE pet CASCADE CONSTRAINTS;
+
+Table PET dropped.
+
+SQL> 
+SQL> DROP TABLE prescription CASCADE CONSTRAINTS;
+
+Table PRESCRIPTION dropped.
+
+SQL> 
+SQL> DROP TABLE prsc_drug CASCADE CONSTRAINTS;
+
+Table PRSC_DRUG dropped.
+
+SQL> 
+SQL> DROP TABLE service CASCADE CONSTRAINTS;
+
+Table SERVICE dropped.
+
+SQL> 
+SQL> DROP TABLE spec CASCADE CONSTRAINTS;
+
+Table SPEC dropped.
+
+SQL> 
+SQL> DROP TABLE training CASCADE CONSTRAINTS;
+
+Table TRAINING dropped.
+
+SQL> 
+SQL> DROP TABLE training_status CASCADE CONSTRAINTS;
+
+Table TRAINING_STATUS dropped.
+
+SQL> 
+SQL> DROP TABLE trn_instr CASCADE CONSTRAINTS;
+
+Table TRN_INSTR dropped.
+
+SQL> 
+SQL> DROP TABLE trninstr_spec CASCADE CONSTRAINTS;
+
+Table TRNINSTR_SPEC dropped.
+
+SQL> 
+SQL> DROP TABLE vet CASCADE CONSTRAINTS;
+
+Table VET dropped.
+
+SQL> 
+SQL> DROP TABLE visit CASCADE CONSTRAINTS;
+
+Table VISIT dropped.
+
+SQL> 
+SQL> -- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+SQL> 
+SQL> -- predefined type, no DDL - XMLTYPE
+SQL> 
+SQL> CREATE TABLE animal_type (
+  2      animal_typeid   NUMBER NOT NULL,
+  3      animal_typename VARCHAR2(50 CHAR) NOT NULL
+  4  );
+
+Table ANIMAL_TYPE created.
+
+SQL> 
+SQL> COMMENT ON COLUMN animal_type.animal_typeid IS
+  2      'animal type id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN animal_type.animal_typename IS
+  2      'animal type name';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE animal_type ADD CONSTRAINT animal_type_pk PRIMARY KEY ( animal_typeid );
+
+Table ANIMAL_TYPE altered.
+
+SQL> 
+SQL> ALTER TABLE animal_type ADD CONSTRAINT animal_type_nk UNIQUE ( animal_typeid );
+
+Error starting at line : 70 in command -
+ALTER TABLE animal_type ADD CONSTRAINT animal_type_nk UNIQUE ( animal_typeid )
+Error report -
+ORA-02261: such unique or primary key already exists in the table
+02261. 00000 -  "such unique or primary key already exists in the table"
+*Cause:    Self-evident.
+*Action:   Remove the extra key.
+SQL> 
+SQL> CREATE TABLE clinic (
+  2      clinic_id      NUMBER(10) NOT NULL,
+  3      clinic_name    VARCHAR2(50) NOT NULL,
+  4      clinic_address VARCHAR2(50) NOT NULL,
+  5      clinic_phone   NUMBER(10) NOT NULL
+  6  );
+
+Table CLINIC created.
+
+SQL> 
+SQL> COMMENT ON COLUMN clinic.clinic_id IS
+  2      'clinic id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN clinic.clinic_name IS
+  2      'clinic name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN clinic.clinic_address IS
+  2      'clinic address';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE clinic ADD CONSTRAINT clinic_pk PRIMARY KEY ( clinic_id );
+
+Table CLINIC altered.
+
+SQL> 
+SQL> CREATE TABLE drug (
+  2      drug_id            NUMBER NOT NULL,
+  3      drug_name          VARCHAR2(50 CHAR) NOT NULL,
+  4      drug_instruction   VARCHAR2(50 CHAR) NOT NULL,
+  5      drug_linecost      NUMBER NOT NULL,
+  6      pet_id             NUMBER NOT NULL,
+  7      visit_dateandtime  DATE NOT NULL,
+  8      invoice_invoice_id NUMBER NOT NULL
+  9  );
+
+Table DRUG created.
+
+SQL> 
+SQL> COMMENT ON COLUMN drug.drug_id IS
+  2      'drug id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN drug.drug_name IS
+  2      'name of drug';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN drug.drug_instruction IS
+  2      'instruction of a drug';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN drug.drug_linecost IS
+  2      'drug line cost';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN drug.pet_id IS
+  2      'pet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN drug.visit_dateandtime IS
+  2      'visit date and time';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE drug ADD CONSTRAINT drug_pk PRIMARY KEY ( drug_id );
+
+Table DRUG altered.
+
+SQL> 
+SQL> CREATE TABLE invoice (
+  2      total_cost        NUMBER NOT NULL,
+  3      pay_method        VARCHAR2(10 CHAR) NOT NULL,
+  4      pet_id            NUMBER NOT NULL,
+  5      visit_dateandtime DATE NOT NULL,
+  6      invoice_id        NUMBER NOT NULL
+  7  );
+
+Table INVOICE created.
+
+SQL> 
+SQL> ALTER TABLE invoice
+  2      ADD CONSTRAINT chk_paymethod CHECK ( pay_method IN ( 'C', 'E' ) );
+
+Table INVOICE altered.
+
+SQL> 
+SQL> COMMENT ON COLUMN invoice.total_cost IS
+  2      'total cost';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN invoice.pay_method IS
+  2      'pay method';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN invoice.pet_id IS
+  2      'pet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN invoice.visit_dateandtime IS
+  2      'visit date and time';
+
+Comment created.
+
+SQL> 
+SQL> CREATE UNIQUE INDEX invoice__idx ON
+  2      invoice (
+  3          pet_id
+  4      ASC,
+  5          visit_dateandtime
+  6      ASC );
+
+INDEX INVOICE__IDX created.
+
+SQL> 
+SQL> ALTER TABLE invoice ADD CONSTRAINT invoice_pk PRIMARY KEY ( invoice_id );
+
+Table INVOICE altered.
+
+SQL> 
+SQL> CREATE TABLE owner (
+  2      owner_id    NUMBER NOT NULL,
+  3      owner_gname VARCHAR2(50 CHAR) NOT NULL,
+  4      owner_fname VARCHAR2(50 CHAR) NOT NULL,
+  5      owner_phone NUMBER NOT NULL
+  6  );
+
+Table OWNER created.
+
+SQL> 
+SQL> COMMENT ON COLUMN owner.owner_id IS
+  2      'owner id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN owner.owner_gname IS
+  2      'owner''s given name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN owner.owner_fname IS
+  2      'owner''s family name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN owner.owner_phone IS
+  2      'owner''s phone number';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE owner ADD CONSTRAINT owner_pk PRIMARY KEY ( owner_id );
+
+Table OWNER altered.
+
+SQL> 
+SQL> CREATE TABLE pet (
+  2      pet_id        NUMBER NOT NULL,
+  3      pet_name      VARCHAR2(50 CHAR) NOT NULL,
+  4      pet_dob       DATE NOT NULL,
+  5      pet_type      VARCHAR2(10 CHAR) NOT NULL,
+  6      owner_id      NUMBER NOT NULL,
+  7      pet_status    VARCHAR2(50 CHAR) NOT NULL,
+  8      animal_typeid NUMBER NOT NULL
+  9  );
+
+Table PET created.
+
+SQL> 
+SQL> ALTER TABLE pet
+  2      ADD CONSTRAINT chk_petstatus CHECK ( pet_status IN ( 'A', 'D' ) );
+
+Table PET altered.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.pet_id IS
+  2      'pet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.pet_name IS
+  2      'animal name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.pet_dob IS
+  2      'animal date of birth';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.pet_type IS
+  2      'animal type';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.owner_id IS
+  2      'owner id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.pet_status IS
+  2      'pet status (whether it''s dead or alive)';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN pet.animal_typeid IS
+  2      'animal type id';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE pet ADD CONSTRAINT pet_pk PRIMARY KEY ( pet_id );
+
+Table PET altered.
+
+SQL> 
+SQL> CREATE TABLE prescription (
+  2      prsc_dose         VARCHAR2(50 CHAR) NOT NULL,
+  3      prsc_freq         VARCHAR2(50 CHAR) NOT NULL,
+  4      pet_id            NUMBER NOT NULL,
+  5      visit_dateandtime DATE NOT NULL
+  6  );
+
+Table PRESCRIPTION created.
+
+SQL> 
+SQL> COMMENT ON COLUMN prescription.prsc_dose IS
+  2      'advice dose of drug';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN prescription.prsc_freq IS
+  2      'advice frequency of drug';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN prescription.pet_id IS
+  2      'pet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN prescription.visit_dateandtime IS
+  2      'visit date and time';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE prescription ADD CONSTRAINT prescription_pk PRIMARY KEY ( pet_id,
+  2                                                                        visit_dateandtime
+  3                                                                        );
+
+Table PRESCRIPTION altered.
+
+SQL> 
+SQL> CREATE TABLE prsc_drug (
+  2      drug_drug_id                   NUMBER NOT NULL,
+  3      prescription_pet_id            NUMBER NOT NULL,
+  4      prescription_visit_dateandtime DATE NOT NULL
+  5  );
+
+Table PRSC_DRUG created.
+
+SQL> 
+SQL> ALTER TABLE prsc_drug
+  2      ADD CONSTRAINT prsc_drug_pk PRIMARY KEY ( drug_drug_id,
+  3                                                prescription_pet_id,
+  4                                                prescription_visit_dateandtime );
+
+Table PRSC_DRUG altered.
+
+SQL> 
+SQL> CREATE TABLE service (
+  2      service_code        VARCHAR2(50 CHAR) NOT NULL,
+  3      service_description VARCHAR2(50 CHAR) NOT NULL,
+  4      service_linecost    NUMBER NOT NULL,
+  5      pet_id              NUMBER NOT NULL,
+  6      visit_dateandtime   DATE NOT NULL,
+  7      invoice_invoice_id  NUMBER NOT NULL
+  8  );
+
+Table SERVICE created.
+
+SQL> 
+SQL> COMMENT ON COLUMN service.service_code IS
+  2      'service code';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN service.service_description IS
+  2      'service description';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN service.service_linecost IS
+  2      'service line cost';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN service.pet_id IS
+  2      'pet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN service.visit_dateandtime IS
+  2      'visit date and time';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE service ADD CONSTRAINT service_pk PRIMARY KEY ( service_code );
+
+Table SERVICE altered.
+
+SQL> 
+SQL> CREATE TABLE spec (
+  2      vet_spec_id NUMBER NOT NULL,
+  3      spec_name   VARCHAR2(50 CHAR) NOT NULL,
+  4      vet_id      NUMBER(10) NOT NULL
+  5  );
+
+Table SPEC created.
+
+SQL> 
+SQL> COMMENT ON COLUMN spec.vet_spec_id IS
+  2      'specialization id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN spec.spec_name IS
+  2      'specialization name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN spec.vet_id IS
+  2      'vet id';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE spec ADD CONSTRAINT specialization_pk PRIMARY KEY ( vet_spec_id );
+
+Table SPEC altered.
+
+SQL> 
+SQL> ALTER TABLE spec ADD CONSTRAINT specialization_nk UNIQUE ( vet_id );
+
+Table SPEC altered.
+
+SQL> 
+SQL> CREATE TABLE training (
+  2      trn_id         NUMBER(10) NOT NULL,
+  3      trn_name       VARCHAR2(50) NOT NULL,
+  4      trn_duration   VARCHAR2(10) NOT NULL,
+  5      vet_id         NUMBER(10) NOT NULL,
+  6      clinic_id      NUMBER(10) NOT NULL,
+  7      trn_start_date DATE NOT NULL,
+  8      trn_start_time VARCHAR2(10),
+  9      trninstr_id    NUMBER(20) NOT NULL
+ 10  );
+
+Table TRAINING created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.trn_id IS
+  2      'training ID (surrogate PK)';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.trn_name IS
+  2      'name of training';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.trn_duration IS
+  2      'duration of training';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.vet_id IS
+  2      'vet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.clinic_id IS
+  2      'clinic id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.trn_start_date IS
+  2      'training starting date';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.trn_start_time IS
+  2      'training starting time';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training.trninstr_id IS
+  2      'training instructor id';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE training ADD CONSTRAINT training_pk PRIMARY KEY ( trn_id );
+
+Table TRAINING altered.
+
+SQL> 
+SQL> CREATE TABLE training_status (
+  2      trnsts_complete VARCHAR2(50 CHAR) NOT NULL,
+  3      trnsts_expry    DATE NOT NULL,
+  4      vet_id          NUMBER(10) NOT NULL,
+  5      trn_id          NUMBER(10) NOT NULL
+  6  );
+
+Table TRAINING_STATUS created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training_status.trnsts_complete IS
+  2      'training status completion status';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training_status.trnsts_expry IS
+  2      'vet expiry date to course';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training_status.vet_id IS
+  2      'vet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN training_status.trn_id IS
+  2      'training ID (surrogate PK)';
+
+Comment created.
+
+SQL> 
+SQL> CREATE UNIQUE INDEX training_status__idx ON
+  2      training_status (
+  3          vet_id
+  4      ASC );
+
+INDEX TRAINING_STATUS__IDX created.
+
+SQL> 
+SQL> CREATE TABLE trn_instr (
+  2      vet_spec_id   NUMBER,
+  3      trninstr_id   NUMBER(20) NOT NULL,
+  4      trninstr_name VARCHAR2(50) NOT NULL
+  5  );
+
+Table TRN_INSTR created.
+
+SQL> 
+SQL> COMMENT ON COLUMN trn_instr.vet_spec_id IS
+  2      'specialization id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN trn_instr.trninstr_id IS
+  2      'training instructor id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN trn_instr.trninstr_name IS
+  2      'training instructor name';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE trn_instr ADD CONSTRAINT training_instructor_pk PRIMARY KEY ( trninstr_id
+  2  );
+
+Table TRN_INSTR altered.
+
+SQL> 
+SQL> CREATE TABLE trninstr_spec (
+  2      trn_instr_trninstr_id NUMBER(20) NOT NULL,
+  3      spec_vet_spec_id      NUMBER NOT NULL
+  4  );
+
+Table TRNINSTR_SPEC created.
+
+SQL> 
+SQL> ALTER TABLE trninstr_spec ADD CONSTRAINT trninstr_spec_pk PRIMARY KEY ( trn_instr_trninstr_id
+  2  ,
+  3                                                                          spec_vet_spec_id
+  4                                                                          );
+
+Table TRNINSTR_SPEC altered.
+
+SQL> 
+SQL> CREATE TABLE vet (
+  2      vet_id             NUMBER(10) NOT NULL,
+  3      vet_given_name     VARCHAR2(50 CHAR) NOT NULL,
+  4      vet_family_name    VARCHAR2(50 CHAR) NOT NULL,
+  5      vet_phone          NUMBER(10) NOT NULL,
+  6      vet_date_employed  DATE NOT NULL,
+  7      vet_specialization VARCHAR2(30 CHAR),
+  8      clinic_id          NUMBER(10) NOT NULL,
+  9      vet_home_clinic_id NUMBER(20) NOT NULL
+ 10  );
+
+Table VET created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_id IS
+  2      'vet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_given_name IS
+  2      'vet given name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_family_name IS
+  2      'vet family name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_phone IS
+  2      'vet_phone';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_date_employed IS
+  2      'vet date of employment';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_specialization IS
+  2      'vet specialisation';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.clinic_id IS
+  2      'clinic id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN vet.vet_home_clinic_id IS
+  2      'vet home clinic id';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE vet ADD CONSTRAINT vet_pk PRIMARY KEY ( vet_id );
+
+Table VET altered.
+
+SQL> 
+SQL> CREATE TABLE visit (
+  2      visit_dateandtime  DATE NOT NULL,
+  3      visit_pet_weight   NUMBER NOT NULL,
+  4      visit_duration     NUMBER NOT NULL,
+  5      visit_notes        VARCHAR2(50 CHAR),
+  6      clinic_id          NUMBER(10) NOT NULL,
+  7      pet_id             NUMBER NOT NULL,
+  8      vet_id             NUMBER(10) NOT NULL,
+  9      invoice_invoice_id NUMBER NOT NULL
+ 10  );
+
+Table VISIT created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.visit_dateandtime IS
+  2      'visit date and time';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.visit_pet_weight IS
+  2      'visit pet weight';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.visit_duration IS
+  2      'visit duration';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.visit_notes IS
+  2      'visit notes';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.clinic_id IS
+  2      'clinic id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.pet_id IS
+  2      'pet id';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN visit.vet_id IS
+  2      'vet id';
+
+Comment created.
+
+SQL> 
+SQL> CREATE UNIQUE INDEX visit__idx ON
+  2      visit (
+  3          invoice_invoice_id
+  4      ASC );
+
+INDEX VISIT__IDX created.
+
+SQL> 
+SQL> ALTER TABLE visit ADD CONSTRAINT visit_pk PRIMARY KEY ( pet_id,
+  2                                                          visit_dateandtime );
+
+Table VISIT altered.
+
+SQL> 
+SQL> ALTER TABLE training
+  2      ADD CONSTRAINT clinic_training FOREIGN KEY ( clinic_id )
+  3          REFERENCES clinic ( clinic_id );
+
+Table TRAINING altered.
+
+SQL> 
+SQL> ALTER TABLE visit
+  2      ADD CONSTRAINT clinic_visit FOREIGN KEY ( clinic_id )
+  3          REFERENCES clinic ( clinic_id );
+
+Table VISIT altered.
+
+SQL> 
+SQL> ALTER TABLE drug
+  2      ADD CONSTRAINT invoice_drug FOREIGN KEY ( invoice_invoice_id )
+  3          REFERENCES invoice ( invoice_id );
+
+Table DRUG altered.
+
+SQL> 
+SQL> ALTER TABLE service
+  2      ADD CONSTRAINT invoice_service FOREIGN KEY ( invoice_invoice_id )
+  3          REFERENCES invoice ( invoice_id );
+
+Table SERVICE altered.
+
+SQL> 
+SQL> ALTER TABLE pet
+  2      ADD CONSTRAINT owner_pet FOREIGN KEY ( owner_id )
+  3          REFERENCES owner ( owner_id );
+
+Table PET altered.
+
+SQL> 
+SQL> ALTER TABLE pet
+  2      ADD CONSTRAINT pet_animaltype FOREIGN KEY ( animal_typeid )
+  3          REFERENCES animal_type ( animal_typeid );
+
+Table PET altered.
+
+SQL> 
+SQL> ALTER TABLE visit
+  2      ADD CONSTRAINT pet_visit FOREIGN KEY ( pet_id )
+  3          REFERENCES pet ( pet_id );
+
+Table VISIT altered.
+
+SQL> 
+SQL> ALTER TABLE prsc_drug
+  2      ADD CONSTRAINT prsc_drug_drug_fk FOREIGN KEY ( drug_drug_id )
+  3          REFERENCES drug ( drug_id );
+
+Table PRSC_DRUG altered.
+
+SQL> 
+SQL> ALTER TABLE prsc_drug
+  2      ADD CONSTRAINT prsc_drug_prescription_fk FOREIGN KEY ( prescription_pet_id,
+  3                                                             prescription_visit_dateandtime
+  4                                                             )
+  5          REFERENCES prescription ( pet_id,
+  6                                    visit_dateandtime );
+
+Table PRSC_DRUG altered.
+
+SQL> 
+SQL> ALTER TABLE training_status
+  2      ADD CONSTRAINT relation_12 FOREIGN KEY ( vet_id )
+  3          REFERENCES vet ( vet_id );
+
+Table TRAINING_STATUS altered.
+
+SQL> 
+SQL> ALTER TABLE training_status
+  2      ADD CONSTRAINT trn_trnstatus FOREIGN KEY ( trn_id )
+  3          REFERENCES training ( trn_id );
+
+Table TRAINING_STATUS altered.
+
+SQL> 
+SQL> ALTER TABLE trninstr_spec
+  2      ADD CONSTRAINT trninstr_spec_spec_fk FOREIGN KEY ( spec_vet_spec_id )
+  3          REFERENCES spec ( vet_spec_id );
+
+Table TRNINSTR_SPEC altered.
+
+SQL> 
+SQL> ALTER TABLE trninstr_spec
+  2      ADD CONSTRAINT trninstr_spec_trn_instr_fk FOREIGN KEY ( trn_instr_trninstr_id )
+  3          REFERENCES trn_instr ( trninstr_id );
+
+Table TRNINSTR_SPEC altered.
+
+SQL> 
+SQL> ALTER TABLE training
+  2      ADD CONSTRAINT trninstr_trn FOREIGN KEY ( trninstr_id )
+  3          REFERENCES trn_instr ( trninstr_id );
+
+Table TRAINING altered.
+
+SQL> 
+SQL> ALTER TABLE vet
+  2      ADD CONSTRAINT vet_clinic FOREIGN KEY ( clinic_id )
+  3          REFERENCES clinic ( clinic_id );
+
+Table VET altered.
+
+SQL> 
+SQL> ALTER TABLE spec
+  2      ADD CONSTRAINT vet_training FOREIGN KEY ( vet_id )
+  3          REFERENCES vet ( vet_id );
+
+Table SPEC altered.
+
+SQL> 
+SQL> ALTER TABLE visit
+  2      ADD CONSTRAINT vet_visit FOREIGN KEY ( vet_id )
+  3          REFERENCES vet ( vet_id );
+
+Table VISIT altered.
+
+SQL> 
+SQL> ALTER TABLE drug
+  2      ADD CONSTRAINT visit_drug FOREIGN KEY ( pet_id,
+  3                                              visit_dateandtime )
+  4          REFERENCES visit ( pet_id,
+  5                             visit_dateandtime );
+
+Table DRUG altered.
+
+SQL> 
+SQL> ALTER TABLE invoice
+  2      ADD CONSTRAINT visit_invoice FOREIGN KEY ( pet_id,
+  3                                                 visit_dateandtime )
+  4          REFERENCES visit ( pet_id,
+  5                             visit_dateandtime );
+
+Table INVOICE altered.
+
+SQL> 
+SQL> ALTER TABLE visit
+  2      ADD CONSTRAINT visit_invoicev1 FOREIGN KEY ( invoice_invoice_id )
+  3          REFERENCES invoice ( invoice_id );
+
+Table VISIT altered.
+
+SQL> 
+SQL> ALTER TABLE prescription
+  2      ADD CONSTRAINT visit_prsc FOREIGN KEY ( pet_id,
+  3                                              visit_dateandtime )
+  4          REFERENCES visit ( pet_id,
+  5                             visit_dateandtime );
+
+Table PRESCRIPTION altered.
+
+SQL> 
+SQL> ALTER TABLE service
+  2      ADD CONSTRAINT visit_service FOREIGN KEY ( pet_id,
+  3                                                 visit_dateandtime )
+  4          REFERENCES visit ( pet_id,
+  5                             visit_dateandtime );
+
+Table SERVICE altered.
+
+SQL> 
+SQL> CREATE SEQUENCE invoice_invoice_id_seq START WITH 1 NOCACHE ORDER;
+
+Error starting at line : 553 in command -
+CREATE SEQUENCE invoice_invoice_id_seq START WITH 1 NOCACHE ORDER
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER invoice_invoice_id_trg BEFORE
+  2      INSERT ON invoice
+  3      FOR EACH ROW
+  4      WHEN ( new.invoice_id IS NULL )
+  5  BEGIN
+  6      :new.invoice_id := invoice_invoice_id_seq.nextval;
+  7  END;
+  8  /
+
+Trigger INVOICE_INVOICE_ID_TRG compiled
+
+SQL> 
+SQL> SPOOL off
