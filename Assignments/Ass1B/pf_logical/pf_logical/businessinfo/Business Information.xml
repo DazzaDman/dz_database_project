@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="3925D6F3-EEF4-6F0A-DAE6-EC1C7C0C37DD">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 06:44:27 UTC</createdTime>
+<ownerDesignName>pf_logical</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

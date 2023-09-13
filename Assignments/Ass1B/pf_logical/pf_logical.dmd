@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="pf_logical" id="17776BA7-6E79-B65F-17B6-54073805E36B" version="3.5">
+<createdBy>Dazza</createdBy>
+<createdTime>2023-09-13 06:44:27 UTC</createdTime>
+<ownerDesignName>pf_logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>17776BA7-6E79-B65F-17B6-54073805E36B</designId>
+</OSDM_Design>
